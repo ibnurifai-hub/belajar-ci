@@ -28,6 +28,13 @@
         <?php
 }
 ?>
+<li>
+    <a href="<?= base_url('profile') ?>">
+        <i class="bi bi-person"></i>
+        <span>Profile</span>
+    </a>
+</li>
     </ul>
 
+    
 </aside><!-- End Sidebar-->
