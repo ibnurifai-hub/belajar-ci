@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class TransactionModel extends Model
 {
-    protected $table            = 'user';
+    protected $table            = 'transaction'; //disesuaikan
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = true;
+    protected $useSoftDeletes   = true; //disesuaikan
     protected $protectFields    = true;
-    protected $allowedFields    = ['username','email','password','role'];
+    protected $allowedFields    = ['username', 'total_harga', 'alamat', 'ongkir', 'status']; //disesuaikan
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -21,7 +21,7 @@ class UserModel extends Model
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = true;
+    protected $useTimestamps = true; //disesuaikan
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
@@ -30,7 +30,7 @@ class UserModel extends Model
     // Validation
     protected $validationRules      = [];
     protected $validationMessages   = [];
-    protected $skipValidation       = true;
+    protected $skipValidation       = true; //disesuaikan
     protected $cleanValidationRules = true;
 
     // Callbacks
